@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "558061866267",
+    "project_id": "monstermap-8b2c8",
+    "storage_bucket": "monstermap-8b2c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558061866267:android:c61ecabea081e5fcc817be",
+        "android_client_info": {
+          "package_name": "com.example.myapplication4444"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVhkHN0-TdRhN1aF5jYENvU3cYCspOF5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

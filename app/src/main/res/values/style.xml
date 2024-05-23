@@ -1,0 +1,32 @@
+<!-- res/values/style.xml -->
+<resources>
+    <!-- Базовая тема приложения, основанная на Material Components -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/green_blue_primary</item>
+        <item name="colorPrimaryDark">@color/green_blue_primary_dark</item>
+        <item name="colorAccent">@color/green_blue_accent</item>
+
+        <!-- Кастомные параметры -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Стиль для элементов EditText -->
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <!-- Стиль для элементов Button -->
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+    <style name="BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="itemIconSize">30dp</item>
+    </style>
+</resources>

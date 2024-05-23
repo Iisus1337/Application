@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MonsterMap"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textColor="#00897B"/>
+
+    <TextView
+        android:id="@+id/textViewSlogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Составь свой маршрут!"
+        android:textSize="16sp"
+        android:textColor="#00897B"/>
+
+    <FrameLayout
+        android:id="@+id/frameLogin"
+        android:layout_width="324dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/textViewSlogan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp">
+
+        <ImageView
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_button"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вход"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameRegister"
+        android:layout_width="324dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/frameLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_button"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Регистрация"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+    </FrameLayout>
+
+    <Switch
+        android:id="@+id/switchTerms"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/frameRegister"
+        android:layout_marginTop="20dp"
+        android:text="Я согласен с условиями использования приложения" />
+
+</RelativeLayout>

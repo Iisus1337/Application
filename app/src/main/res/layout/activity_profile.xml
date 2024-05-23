@@ -1,0 +1,93 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_pr"
+    tools:context=".ProfileActivity">
+    <ImageView
+        android:id="@+id/rec"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/rectangle1"
+        android:scaleType="fitXY"
+        android:layout_marginTop="140dp"/>
+    <ImageView
+        android:id="@+id/settings_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/setting"
+        android:contentDescription="@string/settings" />
+
+    <ImageView
+        android:id="@+id/user_icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="140dp"
+        android:src="@drawable/user"
+        android:contentDescription="@string/user_profile_image" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="135dp"
+        android:text="Имя пользователя"
+        android:textSize="20sp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/user_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/button_achievements"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_phone"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="300dp"
+        android:text="Мои достижения"
+        style="@style/ButtonStyle" />
+
+    <Button
+        android:id="@+id/button_routes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_achievements"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="360dp"
+        android:text="Мои маршруты"
+        style="@style/ButtonStyle" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/main_button"
+        app:menu="@menu/bottom_menu"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemTextColor="@null"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconTint="@color/icon_color_selector"
+        style="@style/BottomNavigationView"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

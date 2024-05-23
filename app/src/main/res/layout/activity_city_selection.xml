@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BFA5">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="220px"
+        android:layout_height="124px"
+        android:src="@drawable/back"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MonsterMap"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textColor="#ffff"/>
+
+    <TextView
+        android:id="@+id/textViewSlogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Выбери город чтобы начать!"
+        android:textSize="16sp"
+        android:textColor="#ffff"/>
+    <!-- Поисковая строка и список городов внутри прямоугольника с закругленными углами -->
+    <RelativeLayout
+        android:id="@+id/searchContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="390dp"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/rounded_background"
+        android:padding="16dp">
+
+        <!-- Поисковая строка -->
+        <EditText
+            android:id="@+id/searchField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите город..."
+            android:drawableRight="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:padding="12dp"
+            android:background="@drawable/your_custom_background"
+            />
+
+        <!-- Список городов -->
+        <ListView
+            android:id="@+id/lvCities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchField"
+            android:divider="@null"
+            android:dividerHeight="0dp"/>
+
+
+
+        <!-- Кнопка Продолжить, стилизованная под изображение -->
+        <!-- Кнопка Продолжить, стилизованная под изображение -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Кнопка Продолжить, стилизованная под изображение -->
+            <ImageView
+                android:id="@+id/btnContinue"
+                android:layout_width="90dp"
+                android:layout_height="27dp"
+                android:background="@drawable/main_button"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- Текст на кнопке -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:text="Продолжить"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"/>
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

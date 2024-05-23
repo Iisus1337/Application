@@ -1,0 +1,9 @@
+[
+  {
+    "featureType": "road",
+    "elementType": "geometry",
+    "stylers": [
+      { "color": "#66cc99" }
+    ]
+  }
+]

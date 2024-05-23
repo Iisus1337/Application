@@ -1,0 +1,101 @@
+<!-- activity_settings.xml -->
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <!-- Верхний Toolbar с кнопкой "Назад" -->
+
+    <!-- Основной контент с настройками пользователя -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/back_pr">
+
+        <!-- Изображение профиля -->
+
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/user_profile_image"
+            android:src="@drawable/user" />
+
+        <!-- Кнопка загрузки изображения -->
+        <Button
+            android:id="@+id/button_upload_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Загрузить изображение"
+            android:layout_marginTop="16dp"
+            style="@style/ButtonStyle" />
+
+        <!-- Поля для обновления имени пользователя и пароля -->
+        <EditText
+            android:id="@+id/input_new_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Новое имя пользователя"
+            android:layout_marginTop="20dp"
+            style="@style/EditTextStyle"
+            android:background="@drawable/edit_text_background"/>
+
+        <EditText
+            android:id="@+id/input_current_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Старый пароль"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            style="@style/EditTextStyle"
+            android:background="@drawable/edit_text_background"/>
+
+        <EditText
+            android:id="@+id/input_new_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Новый пароль"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            style="@style/EditTextStyle"
+            android:background="@drawable/edit_text_background"/>
+
+        <!-- Кнопка для обновления данных -->
+        <Button
+            android:id="@+id/button_update_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Обновить"
+            android:layout_marginTop="8dp"
+            style="@style/ButtonStyle" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="220px"
+        android:layout_height="124px"
+        android:src="@drawable/back"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/main_button"
+        app:menu="@menu/bottom_menu"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemTextColor="@null"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconTint="@color/icon_color_selector"
+        style="@style/BottomNavigationView"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

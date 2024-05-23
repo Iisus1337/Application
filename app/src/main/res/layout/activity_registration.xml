@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_main"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"/>
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="220px"
+        android:layout_height="124px"
+        android:src="@drawable/back"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MonsterMap"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textColor="#ffff"/>
+
+    <TextView
+        android:id="@+id/textViewSlogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Добро пожаловать!"
+        android:textSize="16sp"
+        android:textColor="#ffff"/>
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Имя пользователя"
+        android:inputType="textPersonName"
+        android:layout_marginTop="220dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Электронная почта"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edit_text_background"
+        android:padding="16dp"/>
+
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Подтвердите пароль"
+        android:inputType="textPassword"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="16dp"/>
+
+    <ImageView
+        android:id="@+id/buttonRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_width="324dp"
+        android:layout_height="60dp"
+        android:background="@drawable/main_button"
+        android:layout_below="@id/editTextConfirmPassword"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Зарегистрироваться"
+        android:layout_alignTop="@id/buttonRegister"
+        android:layout_alignBottom="@id/buttonRegister"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/textViewAlreadyRegistered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Уже зарегистрированы? Войти"
+        android:layout_below="@+id/buttonRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#00897B" />
+
+</RelativeLayout>

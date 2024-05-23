@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Элемент для внутренней тени -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#000000"
+            android:endColor="#00000000"
+            android:angle="90" />
+            <corners android:radius="30dp" />
+        </shape>
+    </item>
+    <!-- Основной элемент фона с закругленными углами и границей -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#4FABA6" />
+            <corners android:radius="30dp" />
+            <stroke
+                android:width="2dp"
+                android:color="#80CBC4" />
+        </shape>
+    </item>
+</layer-list>
